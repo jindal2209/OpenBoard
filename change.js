@@ -4,7 +4,7 @@ canvas.height = window.innerHeight;
 canvas.width = window.innerWidth;
 
 
-function myfunc(event){
+function draw(event){
 	var x = event.clientX;
 	var y = event.clientY;
 	tool.strokeStyle = "red";
@@ -12,6 +12,11 @@ function myfunc(event){
 	tool.stroke();
 }
 
+function start(event){
+	window.addEventListener("mousemove",draw);
+}
+
 function clearCanvas(){
+	removeEventListener("mousemove",draw);
 	tool.clearRect(0,0,window.innerWidth,window.innerHeight);
 }
