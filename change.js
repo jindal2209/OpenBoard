@@ -1,7 +1,7 @@
 var canvas = document.querySelector(".board");
 var tool = canvas.getContext("2d");
-canvas.height = window.innerHeight;
-canvas.width = window.innerWidth;
+canvas.height = "600";
+canvas.width = "1200";
 
 
 function draw(event){
