@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/86ebfe9b86.js" crossorigin="anonymous"></script>
+  <title>Whiteboard</title>
 </head>
+
 <body>
-	<button onclick="clearCanvas();">
-		CLEAR
-	</button>
-	<button onclick="start();">
-		Draw
-	</button>
-	<canvas class='board'>
-	</canvas>
-	
+  <div id="toolbox">
+    <button id='undo'><i class="fas fa-undo"></i></button>
+    <button id='redo'><i class="fas fa-redo"></i></button>
+    <button id='erase'><i class="fas fa-eraser"></i></button>
+    <button id='clearScreen'>Clear</button>
+    <input type="color" id="colorPicker">
+  </div>
+  <canvas id='my_canvas'></canvas>
 </body>
-<script type='text/javascript' src="change.js"></script>
+
 </html>
